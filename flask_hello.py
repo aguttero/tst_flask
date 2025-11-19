@@ -9,7 +9,7 @@ def make_underlined(function):
 
 def make_bold(function):
     def wrapper_function():
-        return f"<b>{function()}</b>"
+        return "<b>" + function() + "</b>"
     return wrapper_function
 
 def make_emphasis(function):
